@@ -14,12 +14,13 @@ public class onPlayerJoin implements Listener {
     public void onPlayerJoin(PlayerJoinEvent e) {
         Player player = e.getPlayer();
 
-        //Anti config broken
+        // Anti-broken configuration
         if(plugin.getConfig().getInt("slot") >= 9 || plugin.getConfig().getInt("slot") <= 1) {
             plugin.getConfig().set("slot", 1);
             plugin.reloadConfig();
         }
-
+        
+        // Change slot in hotbar
         player.getInventory().setHeldItemSlot(plugin.getConfig().getInt("slot") - 1);
     }
 }
