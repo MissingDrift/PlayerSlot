@@ -1,0 +1,9 @@
+name: Playerslot
+version: '${project.version}'
+main: missingdrift.playerslot.Playerslot
+api-version: 1.19
+authors: [ MissingDrift ]
+commands:
+  playerslot:
+    aliases: [ ps ]
+    usage: /<command>

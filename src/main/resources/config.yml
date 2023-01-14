@@ -1,0 +1,4 @@
+# CONFIGURATION
+
+#The slot number that is changed to the player (from 1 to 9)
+slot: 1
